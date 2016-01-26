@@ -32,6 +32,7 @@
         <br />
         <br />
         <br />
+        <asp:Button ID="Button3" runat="server" Text="Button" />
         <br />
         <br />
         <br />
