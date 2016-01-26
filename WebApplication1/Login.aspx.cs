@@ -4,6 +4,11 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
+using System.Data.SqlClient;
+using System.Configuration;
+using System.Windows.Forms;
+
 
 namespace WebApplication1
 {
@@ -28,5 +33,39 @@ namespace WebApplication1
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection("Data Source=(local);Initial Catalog=Proiect;Integrated Security=SSPI");
+
+            conn.Open();
+           // TextBox1.Text = conn.State.ToString();
+            if (conn.State == ConnectionState.Open)
+            {
+                Console.WriteLine(Environment.NewLine);
+                string queryString =
+                 "SELECT Parola FROM dbo.user;";
+                using (conn)
+                {
+                    SqlCommand command = new SqlCommand(queryString, conn);
+                    SqlDataReader intr = command.ExecuteReader();
+                    while (intr.Read())
+                    {
+                        //if (TextBox1.Text.ToString() == Intr["Username"].ToString() && TextBox2.Text.ToString() == Intr["Parola"].ToString())
+                       // {
+                          //  Response.Redirect("Contact.aspx");
+
+                       // }
+                        MessageBox.Show(intr["Parola"].ToString());
+                    }
+
+                }
+
+
+            }
+
+
+        }
     }
+    
 }
