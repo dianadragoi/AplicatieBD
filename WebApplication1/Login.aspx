@@ -29,11 +29,12 @@
         <asp:Label ID="Label2" runat="server" Text="Password:"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="TextBox2" runat="server" style="margin-left: 0px; margin-top: 28px" Width="114px"></asp:TextBox>
+        <asp:Button ID="Button4" runat="server" Text="fu ck git hub" />
         <br />
         <br />
         <br />
         <br />
-        <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Ardelenii este lenti" />
+        <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Ardelenii este lenti si plictisitori" />
         <br />
         <br />
         <br />
