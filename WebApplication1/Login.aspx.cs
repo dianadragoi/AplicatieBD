@@ -44,19 +44,26 @@ namespace WebApplication1
             {
                 Console.WriteLine(Environment.NewLine);
                 string queryString =
-                 "SELECT Parola FROM dbo.user;";
+                 "SELECT Username, Parola FROM dbo.[User];";
                 using (conn)
                 {
                     SqlCommand command = new SqlCommand(queryString, conn);
                     SqlDataReader intr = command.ExecuteReader();
+                    int econt = 0;
+                    
                     while (intr.Read())
+                    { 
+                       if (TextBox1.Text.ToString() == intr["Username"].ToString() && TextBox2.Text.ToString() == intr["Parola"].ToString())
+                       {
+                            Response.Redirect("Contact.aspx");
+                           econt = 1;
+                       }
+                      // MessageBox.Show(intr["Parola"].ToString());
+                    }
+                    if (econt == 0)
                     {
-                        //if (TextBox1.Text.ToString() == Intr["Username"].ToString() && TextBox2.Text.ToString() == Intr["Parola"].ToString())
-                       // {
-                          //  Response.Redirect("Contact.aspx");
-
-                       // }
-                        MessageBox.Show(intr["Parola"].ToString());
+                        MessageBox.Show("Please retry or create an account!", "Incorrect username or password",
+        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
 
                 }

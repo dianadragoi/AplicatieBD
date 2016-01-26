@@ -31,17 +31,26 @@
         <p style="margin-left: 80px">
             <asp:Label ID="Label4" runat="server" Text="Password:"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+            <asp:TextBox ID="TextBox4" runat="server" TextMode="Password"></asp:TextBox>
         </p>
         <p style="margin-left: 80px">
             <asp:Label ID="Label5" runat="server" Text="Repeat password:"></asp:Label>
 &nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+            <asp:TextBox ID="TextBox5" runat="server" TextMode="Password"></asp:TextBox>
         </p>
-        <p style="margin-left: 80px">
-            <asp:Button ID="Button1" runat="server" Text="Sign Up" />
+        <p style="margin-left: 80px; width: 559px;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:CheckBox ID="CheckBox1" runat="server" />
+&nbsp;<asp:Label ID="Label6" runat="server" Text="Student"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:CheckBox ID="CheckBox2" runat="server" />
+            <asp:Label ID="Label7" runat="server" Text="Profesor"></asp:Label>
+            &nbsp;</p>
+        <p style="margin-left: 80px; width: 559px;">
+            &nbsp;&nbsp;&nbsp;
+            <asp:Button ID="Button1" runat="server" Text="Sign Up" OnClick="Button1_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </p>
+            &nbsp;</p>
         <p>
             &nbsp;</p>
     </form>

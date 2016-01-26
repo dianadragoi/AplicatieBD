@@ -5,6 +5,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <style type="text/css">
+        #Password1 {
+            width: 111px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -23,16 +28,16 @@
 &nbsp;
         <asp:Label ID="Label1" runat="server" Text="Username:"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged" style="margin-bottom: 0px" Width="113px"></asp:TextBox>
+        <asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged" style="margin-bottom: 0px" Width="110px"></asp:TextBox>
 &nbsp;<br />
+        <br />
 &nbsp;
         <asp:Label ID="Label2" runat="server" Text="Password:"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="TextBox2" runat="server" style="margin-left: 0px; margin-top: 28px" Width="114px"></asp:TextBox>
+        <asp:TextBox ID="TextBox2" runat="server" TextMode="Password" Width="110px"></asp:TextBox>
         <br />
         <br />
         <br />
-        <asp:Button ID="Button3" runat="server" Text="Button" />
         <br />
         <br />
         <br />
@@ -41,13 +46,18 @@
     
     </div>
         <p>
-            &nbsp;</p>
-        <p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="Button1" runat="server" Height="32px" Text="Log In" Width="97px" OnClick="Button1_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Sign Up" Width="97px" Height="32px" style="margin-top: 2px" />
         </p>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:PasswordRecovery ID="PasswordRecovery1" runat="server" Height="102px" Width="474px">
+            </asp:PasswordRecovery>
+        </p>
+        <p>
+            &nbsp;</p>
     </form>
 </body>
 </html>
