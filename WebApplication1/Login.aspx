@@ -33,6 +33,7 @@
         <br />
         <br />
         <br />
+        <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Ardelenii este lenti" />
         <br />
         <br />
         <br />
@@ -43,9 +44,9 @@
             &nbsp;</p>
         <p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Button1" runat="server" Height="27px" Text="Log In" Width="97px" />
+            <asp:Button ID="Button1" runat="server" Height="32px" Text="Log In" Width="97px" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Sign Up" Width="97px" />
+            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Sign Up" Width="97px" Height="32px" style="margin-top: 2px" />
         </p>
     </form>
 </body>
