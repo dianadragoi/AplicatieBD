@@ -80,6 +80,48 @@ namespace WebApplication1
         {
            
         }
+
+        protected void Button3_Click1(object sender, EventArgs e)
+        {
+            string textBody;
+            SqlConnection conn = new SqlConnection("Data Source=(local);Initial Catalog=Proiect;Integrated Security=SSPI");
+
+            conn.Open();
+           // TextBox1.Text = conn.State.ToString();
+            if (conn.State == ConnectionState.Open)
+            {
+                string nume = TextBox4.Text.ToString();
+                string queryString1 =
+                     "SELECT Username, Parola FROM dbo.[User] WHERE Nume=@1;";
+                
+                using (conn)
+                {
+                    SqlCommand command1 = new SqlCommand(queryString1, conn);
+                    command1.Parameters.Add("@1", nume);
+                    SqlDataReader intr = command1.ExecuteReader();
+                    
+                    while (intr.Read())
+                    {
+
+                            textBody = "Username:" + intr["Username"] + " Parola:" + intr["Parola"];
+                            MailMessage mail = new MailMessage();//("quizzapplication@gmail.com", TextBox3.Text.ToString(), "Password Recovery", textBody);
+                            mail.From = new MailAddress("quizapplication@gmail.com", "MyWeb Site");
+                            mail.To.Add(new MailAddress(TextBox3.Text.ToString()));
+                            mail.Body=textBody;
+                            //SmtpClient SMTPServer = new SmtpClient("127.0.0.1");
+                            SmtpClient client = new SmtpClient("127.0.0.1");
+                          // client.Credentials = new System.Net.NetworkCredential("from gmail address", "your gmail account password");
+                          // client.Port = 587;
+                          // client.Host = "smtp.gmail.com";
+                           //client.EnableSsl = true;
+                       //     client.Credentials = CredentialCache.DefaultNetworkCredentials;
+                           client.Send(mail);
+                    }
+                }
+
+
+            }
+        }
     }
     
 }
