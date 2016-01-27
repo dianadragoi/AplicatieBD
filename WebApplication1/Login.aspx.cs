@@ -8,6 +8,8 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
 using System.Windows.Forms;
+using System.Web.UI.WebControls;
+using System.Net.Mail;
 
 
 namespace WebApplication1
@@ -72,6 +74,11 @@ namespace WebApplication1
             }
 
 
+        }
+
+        protected void PasswordRecovery1_SendingMail(object sender, MailMessageEventArgs e)
+        {
+           
         }
     }
     
