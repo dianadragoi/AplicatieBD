@@ -36,7 +36,7 @@
             <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" style="margin-left: 0px" Text="Teste" Width="90px" />
         </p>
         <p>
-            <asp:ListBox ID="ListBox1" runat="server"></asp:ListBox>
+            <asp:ListBox ID="ListBox1" runat="server" Width="176px"></asp:ListBox>
         </p>
         <p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
