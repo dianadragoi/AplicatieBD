@@ -57,7 +57,7 @@ namespace WebApplication1
                     { 
                        if (TextBox1.Text.ToString() == intr["Username"].ToString() && TextBox2.Text.ToString() == intr["Parola"].ToString())
                        {
-                            Response.Redirect("Contact.aspx");
+                            Response.Redirect("StartQuiz.aspx");
                            econt = 1;
                        }
                       // MessageBox.Show(intr["Parola"].ToString());
