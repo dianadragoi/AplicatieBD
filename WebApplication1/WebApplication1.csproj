@@ -236,6 +236,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="SignUp.aspx" />
     <Content Include="StartQuiz.aspx" />
+    <Content Include="Teste.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -355,6 +356,13 @@
     </Compile>
     <Compile Include="StartQuiz.aspx.designer.cs">
       <DependentUpon>StartQuiz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teste.aspx.cs">
+      <DependentUpon>Teste.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teste.aspx.designer.cs">
+      <DependentUpon>Teste.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
