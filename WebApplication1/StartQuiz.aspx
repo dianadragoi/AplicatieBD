@@ -19,6 +19,10 @@
         </p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Image ID="Image1" runat="server" Height="552px" ImageAlign="Middle" ImageUrl="~/Images/1 (3).jpg" Width="834px" />
+        <br />
+        <br />
+        <br />
+        <asp:ListBox ID="ListBox2" runat="server" Height="204px" OnSelectedIndexChanged="ListBox2_SelectedIndexChanged" Width="210px"></asp:ListBox>
     </form>
 </body>
 </html>
