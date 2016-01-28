@@ -97,31 +97,38 @@ namespace WebApplication1
                 
                 using (conn)
                 {
-                    SqlCommand command1 = new SqlCommand(queryString1, conn);
-                    command1.Parameters.Add("@1", nume);
-                    SqlDataReader intr = command1.ExecuteReader();
-                    SmtpClient client = new SmtpClient("smtp.gmail.com");
-                    client.Port = 587;
-                    client.EnableSsl = true;
-                    client.Timeout = 100000;
-                    client.EnableSsl = true;
-                    client.DeliveryMethod = SmtpDeliveryMethod.Network;
-                    client.UseDefaultCredentials = false;
-                    client.Credentials = new NetworkCredential("quizzapplication@gmail.com", "platformaverificare");
-                    MailMessage msg = new MailMessage();
-                    msg.To.Add(new MailAddress(TextBox3.Text, ToString()));
-                    msg.From = new MailAddress("quizzapplication@gmail.com");
-                    msg.Subject = "Authentification";
-
-                    while (intr.Read())
+                    try
                     {
+                        SqlCommand command1 = new SqlCommand(queryString1, conn);
+                        command1.Parameters.Add("@1", nume);
+                        SqlDataReader intr = command1.ExecuteReader();
+                        SmtpClient client = new SmtpClient("smtp.gmail.com");
+                        client.Port = 587;
+                        client.EnableSsl = true;
+                        client.Timeout = 100000;
+                        client.EnableSsl = true;
+                        client.DeliveryMethod = SmtpDeliveryMethod.Network;
+                        client.UseDefaultCredentials = false;
+                        client.Credentials = new NetworkCredential("quizzapplication@gmail.com", "platformaverificare");
+                        MailMessage msg = new MailMessage();
+                        msg.To.Add(new MailAddress(TextBox3.Text, ToString()));
+                        msg.From = new MailAddress("quizzapplication@gmail.com");
+                        msg.Subject = "Authentification";
 
-                        textBody = "Datele de autentificare pentru aplicatia Platforma de verificare pentru licenta:  Username: " + intr["Username"] + " Parola: " + intr["Parola"];
-                        msg.Body = textBody;
+                        while (intr.Read())
+                        {
 
+                            textBody = "Datele de autentificare pentru aplicatia Platforma de verificare pentru licenta:  Username: " + intr["Username"] + " Parola: " + intr["Parola"];
+                            msg.Body = textBody;
+
+                        }
+                        client.Send(msg);
+                        MessageBox.Show("Successfully Sent Message.");
                     }
-                    client.Send(msg);
-                    MessageBox.Show("Successfully Sent Message.");
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
                 }
 
 
