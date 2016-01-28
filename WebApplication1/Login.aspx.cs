@@ -10,6 +10,7 @@ using System.Configuration;
 using System.Windows.Forms;
 using System.Web.UI.WebControls;
 using System.Net.Mail;
+using System.Net;
 
 
 namespace WebApplication1
@@ -99,24 +100,28 @@ namespace WebApplication1
                     SqlCommand command1 = new SqlCommand(queryString1, conn);
                     command1.Parameters.Add("@1", nume);
                     SqlDataReader intr = command1.ExecuteReader();
-                    
+                    SmtpClient client = new SmtpClient("smtp.gmail.com");
+                    client.Port = 587;
+                    client.EnableSsl = true;
+                    client.Timeout = 100000;
+                    client.EnableSsl = true;
+                    client.DeliveryMethod = SmtpDeliveryMethod.Network;
+                    client.UseDefaultCredentials = false;
+                    client.Credentials = new NetworkCredential("quizzapplication@gmail.com", "platformaverificare");
+                    MailMessage msg = new MailMessage();
+                    msg.To.Add(new MailAddress(TextBox3.Text, ToString()));
+                    msg.From = new MailAddress("quizzapplication@gmail.com");
+                    msg.Subject = "Authentification";
+
                     while (intr.Read())
                     {
 
-                            textBody = "Username:" + intr["Username"] + " Parola:" + intr["Parola"];
-                            MailMessage mail = new MailMessage();//("quizzapplication@gmail.com", TextBox3.Text.ToString(), "Password Recovery", textBody);
-                            mail.From = new MailAddress("quizapplication@gmail.com", "MyWeb Site");
-                            mail.To.Add(new MailAddress(TextBox3.Text.ToString()));
-                            mail.Body=textBody;
-                            //SmtpClient SMTPServer = new SmtpClient("127.0.0.1");
-                            SmtpClient client = new SmtpClient("127.0.0.1");
-                          // client.Credentials = new System.Net.NetworkCredential("from gmail address", "your gmail account password");
-                          // client.Port = 587;
-                          // client.Host = "smtp.gmail.com";
-                           //client.EnableSsl = true;
-                       //     client.Credentials = CredentialCache.DefaultNetworkCredentials;
-                           client.Send(mail);
+                        textBody = "Datele de autentificare pentru aplicatia Platforma de verificare pentru licenta:  Username: " + intr["Username"] + " Parola: " + intr["Parola"];
+                        msg.Body = textBody;
+
                     }
+                    client.Send(msg);
+                    MessageBox.Show("Successfully Sent Message.");
                 }
 
 
