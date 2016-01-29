@@ -379,6 +379,16 @@
     <Content Include="Account\Web.config" />
     <Content Include="Site.Master" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BussinessL\BussinessL.csproj">
+      <Project>{00f988f2-2109-4287-b396-323ec36ed124}</Project>
+      <Name>BussinessL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataL\DataL.csproj">
+      <Project>{fa527adc-bf0e-4251-895a-b0fd0e4c92ad}</Project>
+      <Name>DataL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -6,11 +6,17 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Data;
+using BussinessL.Models;
+using BussinessL;
+using DataL.Models;
+using DataL;
+
 
 namespace WebApplication1
 {
     public partial class StartQuiz : System.Web.UI.Page
     {
+        Bussiness b = new Bussiness();
         protected void Page_Load(object sender, EventArgs e)
         {
             this.MaintainScrollPositionOnPostBack = true;
@@ -38,29 +44,21 @@ namespace WebApplication1
 
         protected void Button2_Click1(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection("Data Source=(local);Initial Catalog=Proiect;Integrated Security=SSPI");
-            conn.Open();
-
-            if (conn.State == ConnectionState.Open)
+            var temp = b.getMaterii();
+            foreach (var aux in temp)
             {
-                Console.WriteLine(Environment.NewLine);
-                string queryString = "Select materie FROM Materii;";
-                using (conn)
-                {
-                    SqlCommand command = new SqlCommand(queryString, conn);
-                    SqlDataReader intr = command.ExecuteReader();
-                    while (intr.Read())
-                    {
-                        this.ListBox1.Items.Add(intr["materie"].ToString());
-                        //this.ListBox1.Items.ToString();
-                    }
-                }
+                ListBox1.Items.Add(aux.materie.ToString());
             }
         }
 
         protected void Button3_Click(object sender, EventArgs e)
         {
-           
+
+            var temp = b.getProfesori();
+            foreach (var aux in temp)
+            {
+                ListBox2.Items.Add(aux.Nume.ToString());
+            }
         }
     }
 }

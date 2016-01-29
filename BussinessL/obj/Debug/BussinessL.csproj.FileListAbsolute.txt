@@ -1,0 +1,12 @@
+C:\Users\Compaq\Documents\GitHub\AplicatieBD\BussinessL\bin\Debug\BussinessL.dll.config
+C:\Users\Compaq\Documents\GitHub\AplicatieBD\BussinessL\bin\Debug\BussinessL.dll
+C:\Users\Compaq\Documents\GitHub\AplicatieBD\BussinessL\bin\Debug\BussinessL.pdb
+C:\Users\Compaq\Documents\GitHub\AplicatieBD\BussinessL\bin\Debug\DataL.dll
+C:\Users\Compaq\Documents\GitHub\AplicatieBD\BussinessL\bin\Debug\EntityFramework.dll
+C:\Users\Compaq\Documents\GitHub\AplicatieBD\BussinessL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Compaq\Documents\GitHub\AplicatieBD\BussinessL\bin\Debug\DataL.pdb
+C:\Users\Compaq\Documents\GitHub\AplicatieBD\BussinessL\bin\Debug\EntityFramework.xml
+C:\Users\Compaq\Documents\GitHub\AplicatieBD\BussinessL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Compaq\Documents\GitHub\AplicatieBD\BussinessL\obj\Debug\BussinessL.csprojResolveAssemblyReference.cache
+C:\Users\Compaq\Documents\GitHub\AplicatieBD\BussinessL\obj\Debug\BussinessL.dll
+C:\Users\Compaq\Documents\GitHub\AplicatieBD\BussinessL\obj\Debug\BussinessL.pdb

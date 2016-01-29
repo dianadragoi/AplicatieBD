@@ -165,3 +165,7 @@ C:\Users\Compaq\Documents\GitHub\AplicatieBD\WebApplication1\bin\Microsoft.AspNe
 C:\Users\Compaq\Documents\GitHub\AplicatieBD\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
 C:\Users\Compaq\Documents\GitHub\AplicatieBD\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\Compaq\Documents\GitHub\AplicatieBD\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\Compaq\Documents\GitHub\AplicatieBD\WebApplication1\bin\BussinessL.dll
+C:\Users\Compaq\Documents\GitHub\AplicatieBD\WebApplication1\bin\DataL.dll
+C:\Users\Compaq\Documents\GitHub\AplicatieBD\WebApplication1\bin\BussinessL.pdb
+C:\Users\Compaq\Documents\GitHub\AplicatieBD\WebApplication1\bin\DataL.pdb
