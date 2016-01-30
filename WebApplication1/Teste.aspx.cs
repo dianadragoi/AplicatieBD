@@ -22,45 +22,21 @@ namespace WebApplication1
         }
         protected void CheckBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (CheckBox1.Checked == true)
-            {
-                CheckBox2.Checked = false;
-                CheckBox3.Checked = false;
-                CheckBox4.Checked = false;
-            }
             CheckedPressed = true;
         }
 
         protected void CheckBox2_CheckedChanged(object sender, EventArgs e)
         {
-            if (CheckBox2.Checked == true)
-            {
-                CheckBox1.Checked = false;
-                CheckBox3.Checked = false;
-                CheckBox4.Checked = false;
-            }
             CheckedPressed = true;
         }
 
         protected void CheckBox3_CheckedChanged(object sender, EventArgs e)
         {
-            if (CheckBox3.Checked == true)
-            {
-                CheckBox1.Checked = false;
-                CheckBox2.Checked = false;
-                CheckBox4.Checked = false;
-            }
             CheckedPressed = true;
         }
 
         protected void CheckBox4_CheckedChanged(object sender, EventArgs e)
         {
-            if (CheckBox4.Checked == true)
-            {
-                CheckBox1.Checked = false;
-                CheckBox2.Checked = false;
-                CheckBox3.Checked = false;
-            }
             CheckedPressed = true;
         }
 
@@ -68,6 +44,7 @@ namespace WebApplication1
         {
             //Start
             Label1.Visible = true;
+            Label4.Visible = false;
             CheckBox1.Visible = true;
             CheckBox2.Visible = true;
             CheckBox3.Visible = true;
@@ -102,6 +79,7 @@ namespace WebApplication1
 
             if (CheckedPressed == false)
             {
+                Label2.ForeColor = System.Drawing.Color.Red;
                 Label2.Text = "Nu ai raspuns!!";
             }
             else
