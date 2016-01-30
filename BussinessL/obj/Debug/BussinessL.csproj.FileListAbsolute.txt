@@ -10,3 +10,15 @@ C:\Users\Compaq\Documents\GitHub\AplicatieBD\BussinessL\bin\Debug\EntityFramewor
 C:\Users\Compaq\Documents\GitHub\AplicatieBD\BussinessL\obj\Debug\BussinessL.csprojResolveAssemblyReference.cache
 C:\Users\Compaq\Documents\GitHub\AplicatieBD\BussinessL\obj\Debug\BussinessL.dll
 C:\Users\Compaq\Documents\GitHub\AplicatieBD\BussinessL\obj\Debug\BussinessL.pdb
+C:\Users\Diana\Documents\GitHub\ProiectBD\BussinessL\bin\Debug\BussinessL.dll.config
+C:\Users\Diana\Documents\GitHub\ProiectBD\BussinessL\bin\Debug\BussinessL.dll
+C:\Users\Diana\Documents\GitHub\ProiectBD\BussinessL\bin\Debug\BussinessL.pdb
+C:\Users\Diana\Documents\GitHub\ProiectBD\BussinessL\bin\Debug\DataL.dll
+C:\Users\Diana\Documents\GitHub\ProiectBD\BussinessL\bin\Debug\EntityFramework.dll
+C:\Users\Diana\Documents\GitHub\ProiectBD\BussinessL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Diana\Documents\GitHub\ProiectBD\BussinessL\bin\Debug\DataL.pdb
+C:\Users\Diana\Documents\GitHub\ProiectBD\BussinessL\bin\Debug\EntityFramework.xml
+C:\Users\Diana\Documents\GitHub\ProiectBD\BussinessL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Diana\Documents\GitHub\ProiectBD\BussinessL\obj\Debug\BussinessL.csprojResolveAssemblyReference.cache
+C:\Users\Diana\Documents\GitHub\ProiectBD\BussinessL\obj\Debug\BussinessL.dll
+C:\Users\Diana\Documents\GitHub\ProiectBD\BussinessL\obj\Debug\BussinessL.pdb

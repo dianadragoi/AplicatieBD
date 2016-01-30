@@ -12,7 +12,7 @@ namespace DataL.Models
         }
 
         public ProiectContext()
-            : base("Name=ProiectContext")
+            : base("Server=.;Database=Proiect;Trusted_Connection=true; Connect Timeout =30; MultipleActiveResultSets=True")
         {
         }
 
