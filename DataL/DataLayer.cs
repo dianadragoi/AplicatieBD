@@ -41,6 +41,12 @@ namespace DataL
             }
         }
 
+        public Intrebari getIntr(int i)
+        {
+            var temp = this.getIntr().ToList<Intrebari>();
+            return temp[i];
+        }
+
         public IEnumerable<Raspunsuri> getRasp(int id_intr)
         {
             using (var context = new ProiectContext())

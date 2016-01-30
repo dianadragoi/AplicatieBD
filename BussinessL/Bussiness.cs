@@ -29,6 +29,12 @@ namespace BussinessL
             var temp = dt.getIntr().ToList<Intrebari>();
             return temp;
         }
+
+        public Intrebari getIntrebare(int i)
+        {
+            var temp = dt.getIntr(i);
+            return temp;
+        }
         public List<Raspunsuri> getRaspuns(int id_intr)
         {
             var temp = dt.getRasp(id_intr).ToList<Raspunsuri>();

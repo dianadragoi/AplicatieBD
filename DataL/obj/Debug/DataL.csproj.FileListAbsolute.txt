@@ -5,7 +5,6 @@ C:\Users\Compaq\Documents\GitHub\AplicatieBD\DataL\bin\Debug\EntityFramework.dll
 C:\Users\Compaq\Documents\GitHub\AplicatieBD\DataL\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Compaq\Documents\GitHub\AplicatieBD\DataL\bin\Debug\EntityFramework.xml
 C:\Users\Compaq\Documents\GitHub\AplicatieBD\DataL\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Compaq\Documents\GitHub\AplicatieBD\DataL\obj\Debug\DataL.csprojResolveAssemblyReference.cache
 C:\Users\Compaq\Documents\GitHub\AplicatieBD\DataL\obj\Debug\DataL.dll
 C:\Users\Compaq\Documents\GitHub\AplicatieBD\DataL\obj\Debug\DataL.pdb
 C:\Users\Diana\Documents\GitHub\ProiectBD\DataL\bin\Debug\DataL.dll.config
