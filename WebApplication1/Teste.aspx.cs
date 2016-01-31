@@ -19,6 +19,7 @@ namespace WebApplication1
         private static bool CheckedPressed = false;
         protected void Page_Load(object sender, EventArgs e)
         {
+             
         }
         protected void CheckBox1_CheckedChanged(object sender, EventArgs e)
         {
