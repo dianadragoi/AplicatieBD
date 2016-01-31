@@ -40,5 +40,34 @@ namespace BussinessL
             var temp = dt.getRasp(id_intr).ToList<Raspunsuri>();
             return temp;
         }
+
+        public List<User> getUser()
+        {
+            var temp = dt.getUser().ToList<User>();
+            return temp;
+
+        }
+
+        //public int getIDMaterie(string nume_materie)
+        //{
+        //    int id = dt.getIDMaterie(nume_materie);
+        //    return id;
+        //}
+
+        public bool InsertIntrebare(string intrebare, string numeMaterie)
+        {
+            return dt.InsertIntrebare(intrebare, numeMaterie);
+        }
+
+        public bool InsertRaspuns(string intrebare, string raspuns, bool ifCorrect)
+        {
+            return dt.InsertRaspuns(intrebare, raspuns, ifCorrect);
+        }
+
+        public int getIDIntrebare(string intrebare)
+        {
+            int idIntrebare = dt.getIDIntrebare(intrebare);
+            return idIntrebare;
+        }
     }
 }

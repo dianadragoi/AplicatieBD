@@ -11,12 +11,14 @@ using System.Windows.Forms;
 using System.Web.UI.WebControls;
 using System.Net.Mail;
 using System.Net;
+using BussinessL;
 
 
 namespace WebApplication1
 {
     public partial class Login : System.Web.UI.Page
     {
+        Bussiness b = new Bussiness();
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -39,42 +41,39 @@ namespace WebApplication1
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            int econt = 0;
+            var temp = b.getUser();
             SqlConnection conn = new SqlConnection("Data Source=(local);Initial Catalog=Proiect;Integrated Security=SSPI");
-
             conn.Open();
-           // TextBox1.Text = conn.State.ToString();
             if (conn.State == ConnectionState.Open)
             {
-                Console.WriteLine(Environment.NewLine);
-                string queryString =
-                 "SELECT Username, Parola FROM dbo.[User];";
-                using (conn)
+                foreach (var aux in temp)
                 {
-                    SqlCommand command = new SqlCommand(queryString, conn);
-                    SqlDataReader intr = command.ExecuteReader();
-                    int econt = 0;
-                    
-                    while (intr.Read())
-                    { 
-                       if (TextBox1.Text.ToString() == intr["Username"].ToString() && TextBox2.Text.ToString() == intr["Parola"].ToString())
-                       {
-                            Response.Redirect("StartQuiz.aspx");
-                           econt = 1;
-                       }
-                      // MessageBox.Show(intr["Parola"].ToString());
-                    }
-                    if (econt == 0)
+                    if (aux.Username.ToString() == TextBox1.Text.ToString() && aux.Parola.ToString() == TextBox2.Text.ToString())
                     {
-                        MessageBox.Show("Please retry or create an account!", "Incorrect username or password",
-        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        econt = 1;
+                        if (aux.ID_rol == 2 || aux.ID_rol == 1)
+                        {
+                            conn.Close();
+                            Response.Redirect("WebProfesor.aspx");
+                        }
+                            
+                        else if (aux.ID_rol == 3)
+                        {
+                            conn.Close();
+                            Response.Redirect("StartQuiz.aspx");
+                        }
+                                
                     }
-
+                }
+                if (econt == 0)
+                {
+                    conn.Close();
+                    MessageBox.Show("Please retry or create an account!", "Incorrect username or password",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
-
             }
-
-
         }
 
         protected void PasswordRecovery1_SendingMail(object sender, MailMessageEventArgs e)
@@ -128,6 +127,10 @@ namespace WebApplication1
                     catch (Exception ex)
                     {
                         MessageBox.Show(ex.Message);
+                    }
+                    finally
+                    {
+                        conn.Close();
                     }
                 }
 
