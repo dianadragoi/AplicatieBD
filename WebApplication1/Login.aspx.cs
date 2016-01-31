@@ -39,8 +39,8 @@ namespace WebApplication1
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection("Data Source=(local);Initial Catalog=Proiect;Integrated Security=SSPI");
-
+            string connString = @"Data Source=RADU-PC\RADU;Initial Catalog=Proiect;Integrated Security=SSPI";
+            SqlConnection conn = new SqlConnection(connString);
             conn.Open();
            // TextBox1.Text = conn.State.ToString();
             if (conn.State == ConnectionState.Open)
@@ -85,7 +85,8 @@ namespace WebApplication1
         protected void Button3_Click1(object sender, EventArgs e)
         {
             string textBody;
-            SqlConnection conn = new SqlConnection("Data Source=(local);Initial Catalog=Proiect;Integrated Security=SSPI");
+            string connString = @"Data Source=RADU-PC\RADU;Initial Catalog=Proiect;Integrated Security=SSPI";
+            SqlConnection conn = new SqlConnection(connString);
 
             conn.Open();
            // TextBox1.Text = conn.State.ToString();

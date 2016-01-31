@@ -12,7 +12,7 @@ namespace DataL.Models
         }
 
         public ProiectContext()
-            : base("Server=.;Database=Proiect;Trusted_Connection=true; Connect Timeout =30; MultipleActiveResultSets=True")
+            : base(@"Data Source=RADU-PC\RADU;Initial Catalog=Proiect;Integrated Security=SSPI")
         {
         }
 
