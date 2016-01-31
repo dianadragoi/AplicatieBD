@@ -64,6 +64,17 @@ namespace WebApplication1
 
 
             MessageBox.Show("Row inserted !! ");
+            TextBox1.Text = "";
+            TextBox2.Text = "";
+            TextBox3.Text = "";
+            TextBox4.Text = "";
+            TextBox5.Text = "";
+            CheckBox1.Checked = false;
+            CheckBox2.Checked = false;
+            CheckBox3.Checked = false;
+            CheckBox4.Checked = false;
+
+
 
         }
 

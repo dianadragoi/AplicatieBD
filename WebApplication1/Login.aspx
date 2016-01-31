@@ -4,11 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
-    <style type="text/css">
-        #Password1 {
-            width: 111px;
-        }
+    <title>Log In</title>
+       <link rel="stylesheet" href="css/style.css">
     </style>
 </head>
 <body>
