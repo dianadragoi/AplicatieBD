@@ -17,3 +17,13 @@ C:\Users\Diana\Documents\GitHub\ProiectBD\DataL\bin\Debug\EntityFramework.SqlSer
 C:\Users\Diana\Documents\GitHub\ProiectBD\DataL\obj\Debug\DataL.csprojResolveAssemblyReference.cache
 C:\Users\Diana\Documents\GitHub\ProiectBD\DataL\obj\Debug\DataL.dll
 C:\Users\Diana\Documents\GitHub\ProiectBD\DataL\obj\Debug\DataL.pdb
+C:\Users\Radu\Documents\GitHub\AplicatieBD\DataL\bin\Debug\DataL.dll.config
+C:\Users\Radu\Documents\GitHub\AplicatieBD\DataL\bin\Debug\DataL.dll
+C:\Users\Radu\Documents\GitHub\AplicatieBD\DataL\bin\Debug\DataL.pdb
+C:\Users\Radu\Documents\GitHub\AplicatieBD\DataL\bin\Debug\EntityFramework.dll
+C:\Users\Radu\Documents\GitHub\AplicatieBD\DataL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Radu\Documents\GitHub\AplicatieBD\DataL\bin\Debug\EntityFramework.xml
+C:\Users\Radu\Documents\GitHub\AplicatieBD\DataL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Radu\Documents\GitHub\AplicatieBD\DataL\obj\Debug\DataL.csprojResolveAssemblyReference.cache
+C:\Users\Radu\Documents\GitHub\AplicatieBD\DataL\obj\Debug\DataL.dll
+C:\Users\Radu\Documents\GitHub\AplicatieBD\DataL\obj\Debug\DataL.pdb
