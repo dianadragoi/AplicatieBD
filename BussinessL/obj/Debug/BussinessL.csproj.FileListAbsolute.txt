@@ -22,15 +22,3 @@ C:\Users\Diana\Documents\GitHub\ProiectBD\BussinessL\bin\Debug\EntityFramework.S
 C:\Users\Diana\Documents\GitHub\ProiectBD\BussinessL\obj\Debug\BussinessL.csprojResolveAssemblyReference.cache
 C:\Users\Diana\Documents\GitHub\ProiectBD\BussinessL\obj\Debug\BussinessL.dll
 C:\Users\Diana\Documents\GitHub\ProiectBD\BussinessL\obj\Debug\BussinessL.pdb
-C:\Users\Radu\Documents\GitHub\AplicatieBD\BussinessL\bin\Debug\BussinessL.dll.config
-C:\Users\Radu\Documents\GitHub\AplicatieBD\BussinessL\bin\Debug\BussinessL.dll
-C:\Users\Radu\Documents\GitHub\AplicatieBD\BussinessL\bin\Debug\BussinessL.pdb
-C:\Users\Radu\Documents\GitHub\AplicatieBD\BussinessL\bin\Debug\DataL.dll
-C:\Users\Radu\Documents\GitHub\AplicatieBD\BussinessL\bin\Debug\EntityFramework.dll
-C:\Users\Radu\Documents\GitHub\AplicatieBD\BussinessL\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Radu\Documents\GitHub\AplicatieBD\BussinessL\bin\Debug\DataL.pdb
-C:\Users\Radu\Documents\GitHub\AplicatieBD\BussinessL\bin\Debug\EntityFramework.xml
-C:\Users\Radu\Documents\GitHub\AplicatieBD\BussinessL\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Radu\Documents\GitHub\AplicatieBD\BussinessL\obj\Debug\BussinessL.csprojResolveAssemblyReference.cache
-C:\Users\Radu\Documents\GitHub\AplicatieBD\BussinessL\obj\Debug\BussinessL.dll
-C:\Users\Radu\Documents\GitHub\AplicatieBD\BussinessL\obj\Debug\BussinessL.pdb

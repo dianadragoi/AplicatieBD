@@ -177,9 +177,3 @@ C:\Users\Diana\Documents\GitHub\ProiectBD\WebApplication1\bin\DataL.pdb
 C:\Users\Diana\Documents\GitHub\ProiectBD\WebApplication1\bin\EntityFramework.SqlServer.xml
 C:\Users\Compaq\Documents\GitHub\AplicatieBD\WebApplication1\bin\EntityFramework.SqlServer.dll
 C:\Users\Compaq\Documents\GitHub\AplicatieBD\WebApplication1\bin\EntityFramework.SqlServer.xml
-C:\Users\Radu\Documents\GitHub\AplicatieBD\WebApplication1\bin\BussinessL.dll
-C:\Users\Radu\Documents\GitHub\AplicatieBD\WebApplication1\bin\DataL.dll
-C:\Users\Radu\Documents\GitHub\AplicatieBD\WebApplication1\bin\EntityFramework.SqlServer.dll
-C:\Users\Radu\Documents\GitHub\AplicatieBD\WebApplication1\bin\BussinessL.pdb
-C:\Users\Radu\Documents\GitHub\AplicatieBD\WebApplication1\bin\DataL.pdb
-C:\Users\Radu\Documents\GitHub\AplicatieBD\WebApplication1\bin\EntityFramework.SqlServer.xml
