@@ -1,10 +1,39 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebProfesor.aspx.cs" Inherits="WebApplication1.WebForm1" %>
 
-<!DOCTYPE html>
+<%@ Register assembly="System.Web.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" namespace="System.Web.UI.DataVisualization.Charting" tagprefix="asp" %>
 
+<!DOCTYPE html>
+<style>
+    #header {
+    background-color:rgb(128,128,128);
+    color:white;
+    text-align:left;
+    padding:5px;
+}
+    #nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:100px;
+    float:left;
+    padding:5px;	      
+}
+#section {
+    width:350px;
+    float:left;
+    padding:10px;	 	 
+}
+#footer {
+    background-color:rgb(128,128,128);
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;	 	 
+}
+    </style>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Intrebari</title>
+    <title>Editeaza Intrebari</title>
        <link rel="stylesheet" href="css/style.css">
     <style type="text/css">
         #form1 {
@@ -15,12 +44,13 @@
         }
     </style>
 </head>
+    <div id="header">
+<h1>Editeaza intrebari</h1>
+</div>
 <body style="height: 299px">
     <form id="form1" runat="server">
         <p>
-            &nbsp;</p>
-        <p>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </p>
         <p>
             &nbsp;</p>
@@ -74,9 +104,21 @@
         <p>
             &nbsp;</p>
         <p>
-            &nbsp; &nbsp;
-        </p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <br />
     </form>
+   
 </body>
+   
 </html>
 

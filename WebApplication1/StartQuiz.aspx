@@ -1,7 +1,34 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="StartQuiz.aspx.cs" Inherits="WebApplication1.StartQuiz" %>
 
 <!DOCTYPE html>
-
+<style>
+    #header {
+    background-color:rgb(128,128,128);
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+    #nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:100px;
+    float:left;
+    padding:5px;	      
+}
+#section {
+    width:350px;
+    float:left;
+    padding:10px;	 	 
+}
+#footer {
+    background-color:rgb(128,128,128);
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;	 	 
+}
+    </style>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Start Quiz</title>
@@ -40,11 +67,20 @@
             <asp:ListBox ID="ListBox1" runat="server" Width="271px" Height="94px"></asp:ListBox>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:ListBox ID="ListBox2" runat="server" Height="93px" Width="276px"></asp:ListBox>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p>
+            &nbsp;&nbsp;
         </p>
         <p>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </p>
     </form>
+    <div id="footer">
+Academia Tehnica Militara 2016
+    </div>
+    <p>
+        &nbsp;</p>
 </body>
 </html>
