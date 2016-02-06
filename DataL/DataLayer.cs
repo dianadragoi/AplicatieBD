@@ -160,5 +160,61 @@ namespace DataL
             }
 
         }
+        public bool delete_intrebare(string intrebare)
+        {
+            int id_intrebare = getIDIntrebare(intrebare);
+            SqlConnection conn = new SqlConnection("Data Source=(local);Initial Catalog=Proiect;Integrated Security=SSPI");
+            conn.Open();
+            using (conn)
+            {
+                //insert Intrebare, ID_materie
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = conn;
+
+                cmd.CommandText = "DELETE FROM dbo.Intrebari WHERE Intrebare = @paramIntrebare";
+                cmd.Parameters.AddWithValue("@paramIntrebare", intrebare);
+
+                try
+                {
+                    // conn.Open();
+                    cmd.ExecuteNonQuery();
+                    conn.Close();
+                    return true;
+                }
+                catch (SqlException d)
+                {
+                    conn.Close();
+                    return false;
+                }
+            }
+        }
+        public bool delete_raspunsuri(string intrebare)
+        {
+            int id_intrebare = getIDIntrebare(intrebare);
+            SqlConnection conn = new SqlConnection("Data Source=(local);Initial Catalog=Proiect;Integrated Security=SSPI");
+            conn.Open();
+            using (conn)
+            {
+                //insert Intrebare, ID_materie
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = conn;
+
+                cmd.CommandText = "DELETE FROM dbo.raspunsuri WHERE ID_Intrebare = @paramIDIntrebare";
+                cmd.Parameters.AddWithValue("@paramIDIntrebare", id_intrebare);
+
+                try
+                {
+                    // conn.Open();
+                    cmd.ExecuteNonQuery();
+                    conn.Close();
+                    return true;
+                }
+                catch (SqlException d)
+                {
+                    conn.Close();
+                    return false;
+                }
+            }
+        }
     }
 }

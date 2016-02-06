@@ -8,6 +8,8 @@ using BussinessL;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using System.Text;
+using System.Configuration;
 
 namespace WebApplication1
 {
@@ -16,7 +18,8 @@ namespace WebApplication1
         Bussiness b = new Bussiness();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+                refresh();
         }
 
         protected void TextBox1_TextChanged(object sender, EventArgs e)
@@ -64,6 +67,7 @@ namespace WebApplication1
 
 
             MessageBox.Show("Row inserted !! ");
+            refresh();
             TextBox1.Text = "";
             TextBox2.Text = "";
             TextBox3.Text = "";
@@ -83,5 +87,32 @@ namespace WebApplication1
         {
 
         }
+
+        private void refresh()
+        {
+            //adaugare in datalist toate intrebarile
+            List<DataL.Models.Intrebari> lista_intrebari = b.getIntrebari();
+            List<String> intr = new List<string>();
+
+            foreach (var r in lista_intrebari)
+            {
+                intr.Add(r.Intrebare);
+            }
+            GridView1.DataSource = intr;
+            GridView1.DataBind();
+        }
+
+        protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            b.delete_raspunsuri(e.Values[0].ToString());
+            b.delete_intrebare(e.Values[0].ToString());
+            refresh();
+        }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Login.aspx");
+        }
     }
+
 }

@@ -12,8 +12,8 @@ namespace WebApplication1
 {
     public partial class Teste : System.Web.UI.Page
     {
-        Bussiness b = new Bussiness();
-        private static int i = 0;
+        Bussiness b = new Bussiness(); 
+        private static int i = 0; //numarul de intrebari ; se incrementeaza odata cu 
         private static int lenghtIntr = 0;
         private static int punctaj = 0;
         private static bool CheckedPressed = false;
@@ -76,7 +76,7 @@ namespace WebApplication1
         protected void Button4_Click(object sender, EventArgs e)
         {
             //Next question
-
+            CheckBox1.Text = CheckBox2.Text = CheckBox3.Text = CheckBox4.Text = "";
             if (CheckedPressed == false)
             {
                 Label2.ForeColor = System.Drawing.Color.Red;
@@ -166,9 +166,10 @@ namespace WebApplication1
             lenghtIntr = b.getIntrebari().Count();
         }
 
+        protected void Button5_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Login.aspx");
 
-
- 
-
+        }
     }
 }

@@ -69,5 +69,16 @@ namespace BussinessL
             int idIntrebare = dt.getIDIntrebare(intrebare);
             return idIntrebare;
         }
+
+        public bool delete_intrebare(string intr)
+        {
+            return dt.delete_intrebare(intr);
+        }
+
+        public bool delete_raspunsuri(string intr)
+        {
+            return dt.delete_raspunsuri(intr);
+        }
     }
+
 }
